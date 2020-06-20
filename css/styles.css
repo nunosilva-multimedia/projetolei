@@ -8,386 +8,119 @@ Foreground color  rgb(237,244,245)
 	              rgb(150,190,192)
 --------------------------------------------------------------------------------------------------------*/
 
+:root{
+	font-size: 16px;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body{
 	font-family: 'Merriweather','Times New Roman', Times, serif;
-	font-size: 20px;
 	background-image: url(../images/background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	color: rgb(237,244,245);
 }
 
-.main_header{
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
 	background-color:rgba(10, 77, 85,0.38);
-	margin: 0% 9%;
-	padding: 1% 0%;
 }
 
-h1{
-	font-family: 'Merriweather','Times New Roman', Times, serif;
-	font-size: normal;
+header h1{
+	padding: 50px 0 25px 0;
+	font-weight: 700;
+	font-size: 4rem;
 }
 
-.intro{
+header nav{
+	padding: 25px 30px 50px 30px;
+	width: 100%;
+}
+
+header nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header nav ul li{
+	margin: 0 auto;
+	list-style: none;
+	max-width: 200px;
+	width: 100%;
+}
+
+header nav ul li .btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	font-size: 12px;
-}
-
-.logo{
-	text-align: center;
-	font-size: 50px;
-}
-
-.button{
-	margin-left: 10%;
-	margin-right: 20%;
-	padding: 2% 0%;
+	background-color: rgb(4,75,77);
+	height: 50px;
+	border-radius: 10px;
 	list-style: none;
 	color: rgb(237,244,245);
-
-}
-
-.button a {
-	background: rgb(4,75,77);
-	border-radius: 5PX;
-	color: rgb(237,244,245);
-	font-size: 25px;
-	list-style: none;
-	text-align: center;
 	text-decoration: none;
-	margin: 3%;
-	padding: 5%;
-	display: block;
-}
-
-.button a:hover{
-	background-color: rgb(14, 178, 184);
-	color: rgb(237,244,245);
 	transition: 0.9s background-color;
 }
 
-.container_2{
+header nav ul li .btn:hover{
+	background-color: rgb(14, 178, 184);
+}
+
+main{
+	padding: 25px 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
 	background: rgba(5, 40, 44, 0.9);
-	padding: 5%;
-	margin: 0% 9%;
 }
 
-.title_1{
-	font-size: 20px;
+main section{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-.intro_img{
-	height: 125px;
-	width: 250px;
+main section .title{
+	padding: 25px 0;
+	font-size: 2rem;
 }
 
-.container_3{
-	background: rgba(5, 40, 44, 0.9);
-	padding: 2% 5%;
-	margin: 0% 9%;
+main section img{
+	padding: 25px 0;
+	max-width: 500px;
 }
 
-#article{
-	padding-top:0%;
-	padding-bottom: 30%;
-	padding-left: 0%;
-	padding-right: 0%;
-}
-#article_title{
-	font-size: 12px;
+main section article{
+	max-width: 300px;
 }
 
-#article_text{
-	font-size: 10px;
-}
-
-#article_box{
-	float: right;
-}
-
-#article_img{
-	height: 75px;
-	width: 150px;
-}
-
-#title_form{
-	font-size: 20px;
-}
-
-#title_contatos{
-	font-size: 20px;
-}
-
-form{
-	margin-left: 5%;
-	font-size: 15px;
-}
-
-form label{
-	font-size: 15px;
-	display: block; 
-	padding-top: 5%;
-	padding-bottom:5%;
-}
-
-#box{
-	width: 230px;
-}
-
-#text_contatos{
-	margin-left: 5%;
-	font-size: 14px;
-}
-
-.social_logo{
-	text-decoration: none;
-}
-
-#social_logo{
-	width: 64px;
-	padding-left: 5%;
-}
-
-.main_footer{
+footer{
 	background: rgb(192, 192, 187);
-	padding: 1% 0%;
+	padding: 20px 0;
 	color: rgb(3, 57, 63);
 	text-align: center;
-	font-size: 8px;
 }
 
-@media screen and (min-width:750px){
-
-	.intro{
-		text-align: center;
-		font-size: 20px;
-	}
-
-	.title_1{
-		font-size: 30px;
-	}
-
-	.intro_img{
-		height: 200px;
-		width: 500px;
-	}
-
-	#article_title{
-		font-size: 20px;
-	}
-	
-	#article_text{
-		font-size: 15px;
-	}
-	
-	#article_box{
-		float: right;
-	}
-	
-	#article_img{
-		height: 150px;
-		width: 300px;
-	}
-
-	#title_form{
-		padding-bottom: 2%;
-		font-size: 30px;
-	}
-
-	#title_contatos{
-		padding-bottom: 2%;
-		font-size: 30px;
-	}
-	
-	form{
-		margin-left: 5%;
-		font-size: 20px;
-	}
-	
-	form label{
-		font-size: 20px;
-		display: block; 
-		padding-top: 5%;
-		padding-bottom:5%;
-	}
-	
-	#box{
-		width: 500px;
-	}
-
-	#enviar{
-		margin-top: 5%;
-		width: 150px;
-		height: 50px;
-		background: rgb(4,75,77);
-		border-radius: 5px;
-		color: rgb(237,244,245);
-		font-size: 25px;
-	}
-
-	#enviar:hover{
-		background-color: rgb(14, 178, 184);
-		color: rgb(237,244,245);
-		transition: 0.9s background-color;
-	}
-	
-	#text_contatos{
-		margin-left: 5%;
-		font-size: 20px;
-	}
-	
-	.social_logo{
-		text-decoration: none;
-	}
-	
-	#social_logo{
-		width: 100px;
-		padding-left: 5%;
-	}
-
-	.main_footer{
-		background: rgb(192, 192, 187);
-		padding: 1% 0%;
-		color: rgb(3, 57, 63);
-		text-align: center;
-		font-size: 15px;
-	}
-}
-
-@media screen and (min-width: 1050px){
-	
-	.button{
-		margin-right: 7%;
-		margin-left: 7%;
-		display: inline-block;
-		width: 200px;
-		height: 50px;
-		overflow: hidden;
-		list-style: none;
-		color: rgb(237,244,245);
-	}
-	
-	.button a {
-		background: rgb(4,75,77);
-		border-radius: 5px;
-		color: rgb(237,244,245);
-		font-size: 25px;
-		list-style: none;
-		text-decoration: none;
-	}
-	
-	.button a:hover{
-		background-color: rgb(14, 178, 184);
-		color: rgb(237,244,245);
-		transition: 0.9s background-color;
-	}
-
-	#article{
-		margin: 0% 1%;
-		display: inline-block;
-		width: 480px;
-		height: 20px;
-		position: relative;
-	}
-
-	#article_title{
-		font-size: 19px;
-	}
-	
-	#article_text{
-		font-size: 15px;
-	}
-	
-	#article_box{
-	float: center;
-	}
-	
-	#article_img{
-		height: 150px;
-		width: 300px;
-	}
-
-	#box_form{
-		display: inline-block;
-		position: absolute;
-	}
-
-	#box_2{
-		padding: 0;
-		margin:0;
-		display: inline-block;
-		position: relative;
-		left: 50%;
-		width: 500px;
-	}
-
-	#box_3{
-		display: block;
-		position: relative;
-		left: 50%;
-	}
-
-	#title_form{
-		display: inline;
-		font-size: 30px;
-	}
-
-	#title_contatos{
-		margin: 0;
-		padding: 0;
-		font-size: 30px;
-	}
-	
-	form{
-		margin-left: 5%;
-		font-size: 20px;
-	}
-	
-	form label{
-		font-size: 20px;
-		display: block; 
-	}
-	
-	#enviar{
-		margin-top: 5%;
-		width: 150px;
-		height: 50px;
-		background: rgb(4,75,77);
-		border-radius: 5px;
-		color: rgb(237,244,245);
-		font-size: 25px;
-	}
-
-	#enviar:hover{
-		background-color: rgb(14, 178, 184);
-		color: rgb(237,244,245);
-		transition: 0.9s background-color;
-	}
-
-	#box{
-		width: 300px;
-	}
-	
-	#text_contatos{
-		margin-left: 30%;
-		font-size: 20px;
-	}
-	
-	.social_logo{
-		text-decoration: none;
-	}
-	
-	#social_logo{
-		width: 64px;
-		padding-top: 4%;
-		padding-left: 2%;
-	}
-
-	.main_footer{
-		background: rgb(192, 192, 187);
-		padding: 1% 0%;
-		color: rgb(3, 57, 63);
-		text-align: center;
-		font-size: 15px;
-	}
+footer p{
+	margin: 0;
+	padding: 0;
+	font-size: .75rem;
+	font-weight: 700;
 }
