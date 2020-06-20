@@ -93,7 +93,6 @@ main{
 main section{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -108,7 +107,34 @@ main section img{
 }
 
 main section article{
-	max-width: 300px;
+	padding: 10px 0;
+	display: flex;
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main section article .info{
+	padding: 0 20px 0 10px;
+	width: 50%;
+}
+
+main section article .image{
+	width: 50%;
+	height: 200px;
+	object-fit: cover;
+    object-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main section article .title{
+	font-size: .85rem;
+}
+
+main section article .description{
+	font-weight: normal;
+	font-size: .7rem;
 }
 
 footer{
