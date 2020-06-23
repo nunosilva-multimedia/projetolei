@@ -85,6 +85,21 @@ header nav ul li .btn:hover{
 	background-color: rgb(14, 178, 184);
 }
 
+@media only screen and (max-width: 920px) {
+    
+	header nav ul{
+		flex-direction: column;
+	}
+
+	header nav ul li{
+		margin: 8px auto;
+	}
+	
+	header h1 {
+		font-size: 2.5rem;
+	}
+}
+
 main{
 	padding: 25px 50px;
 	margin: 0 auto;
@@ -99,6 +114,7 @@ main section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	width: 100%;
 }
 
 main section.intro p{
@@ -107,12 +123,14 @@ main section.intro p{
 
 main section .title{
 	padding: 25px 0;
+	text-align: center;
 	font-size: 2rem;
 }
 
 main section img{
 	padding: 25px 0;
 	max-width: 500px;
+	width: 100%;
 }
 
 main section article{
@@ -267,6 +285,89 @@ main section > .info ul.contact li a:hover,  main section > .info ul.social li a
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 1024px) {
+	main section > form, main section > .info {
+		width: 100%;
+	}
+
+	main section > .info h3.title{
+		padding: 0;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	
+	main{
+		padding: 25px 15px;
+	}
+
+	main section article {
+		flex-wrap: wrap;
+	}
+
+	main section article .info, main section article .image {
+		padding: 0;
+		width: 100%;
+	}
+
+	main section article .info{
+		padding-bottom: 10px;
+	}
+
+	main section article .description{
+		text-align: center;
+	}
+
+	main section article .image {
+		object-fit: contain;
+	} 
+
+	main form{
+		padding-bottom: 15px;
+	}
+
+	main section > form input, main section > form textarea{
+		font-size: 1rem;
+	}
+
+	main section > form input.btn{
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	main section > form, main section > .info {
+		width: 100%;
+	}
+
+	main section > .info h3.title{
+		padding: 0;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 385px) {
+    
+	main section .title {
+		font-size: 1.4rem;
+	}
+	
+
+	main section.intro p {
+		font-size: .85rem;
+	}
+
+	main section > .info ul.contact li {
+		font-size: .75rem;
+	}
+	
+}
+
 footer{
 	background-color: rgb(192, 192, 187);
 	padding: 20px 0;
@@ -279,4 +380,12 @@ footer p{
 	padding: 0;
 	font-size: .75rem;
 	font-weight: 700;
+}
+
+@media only screen and (max-width: 385px) {
+
+	footer p{
+		font-size: .5rem;
+	}
+
 }
